@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h4>Decex Contract</h4>
+<table border="1">
+    <tr>
+        <th rowspan="5"> 调整手续费比率:</th>
+    </tr>
+    <tr>
+        <th>燃烧比例</th>
+        <td><input type="number" id="burnRate"/>/100000</td>
+    </tr>
+    <tr>
+        <th>流动池比例</th>
+        <td><input type="number" id="liquidityRate"/>/100000</td>
+    </tr>
+    <tr>
+        <th>回购池比例</th>
+        <td><input type="number" id="buyBackRate"/>/100000</td>
+    </tr>
+    <tr>
+        <th>项目方比例</th>
+        <td><input type="number" id="projectRate"/>/100000</td>
+    </tr>
+    <tr>
+        <td>
+            <button class="changeChargeFeeButton">确认</button>
+        </td>
+    </tr>
+
+    <tr>
+        <th rowspan="5"> 当前手续费比率:</th>
+    </tr>
+    <tr>
+        <th>燃烧比例</th>
+        <td>
+            <h9 id="burnRateCurrent"></h9>
+            /100000
+        </td>
+    </tr>
+    <tr>
+        <th>流动池比例</th>
+        <td>
+            <h9 id="liquidityRateCurrent"></h9>
+            /100000
+        </td>
+    </tr>
+    <tr>
+        <th>回购池比例</th>
+        <td>
+            <h9 id="buyBackRateCurrent"></h9>
+            /100000
+        </td>
+    </tr>
+    <tr>
+        <th>项目方比例</th>
+        <td>
+            <h9 id="projectRateCurrent"></h9>
+            /100000
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="queryChargeFeeButton">更新</button>
+        </td>
+    </tr>
+
+
+    <tr>
+        <th>增加白名单</th>
+        <td><input type="text" style="width:360px;" id="targetAddressWhite"></td>
+        <td>
+            <button class="addWhiteListButton">确认</button>
+        </td>
+    </tr>
+    <tr>
+        <th>移除名单</th>
+        <td><input type="text" style="width:360px;" id="targetAddressBlack"></td>
+        <td>
+            <button class="removeWhiteListButton">确认</button>
+        </td>
+    </tr>
+
+    <tr>
+        <th>验证黑白名单</th>
+        <td><input type="text" style="width:360px;" id="targetAddressCheck"></td>
+        <td>
+            <button class="checkWhiteListButton">查询</button>
+        </td>
+        <td id="whiteResult">xxx</td>
+    </tr>
+
+
+    <tr>
+        <th>冻结账户</th>
+        <td><input type="text" style="width:360px;" id="targetAddressFrozen"></td>
+        <td>
+            <button class="frozenAccountButton">确认</button>
+        </td>
+    </tr>
+    <tr>
+        <th>解冻账户</th>
+        <td><input type="text" style="width:360px;" id="targetAddressUnfrozen"></td>
+        <td>
+            <button class="unfrozenAccountButton">确认</button>
+        </td>
+    </tr>
+
+    <tr>
+        <th>查询冻结账户</th>
+        <td><input type="text" style="width:360px;" id="targetAddressFrozenCheck"></td>
+
+        <td>
+            <button class="checkFrozenAccountButton">查询</button>
+        </td>
+        <td id="frozenResult">xxx</td>
+    </tr>
+    <tr>
+        <th>权限转移</th>
+        <td><input type="text" style="width:360px;" id="targetAddressOwnerTransfer"></td>
+        <td>
+            <button class="transferDecexOwnerButton">确认</button>
+        </td>
+    </tr>
+
+    <tr>
+        <th>查询拥有者</th>
+        <td>
+            <h9 id="decexOwner"></h9>
+        </td>
+        <td>
+            <button class="checkDecexOwnerButton">查询</button>
+        </td>
+    </tr>
+</table>
+
+
+<h4>PublicSale Contract</h4>
+<table border="1">
+    <tr>
+        <th rowspan="3"> 调整公售比率:</th>
+    </tr>
+    <tr>
+        <th>Stage One</th>
+        <td><input type="number" id="rateOneChange"/>/100000</td>
+    </tr>
+    <tr>
+        <th>Stage Two</th>
+        <td><input type="number" id="rateTwoChange"/>/100000</td>
+    </tr>
+    <tr>
+        <td>
+            <button class="changePublicSellRateButton">确认</button>
+        </td>
+    </tr>
+
+    <tr>
+        <th rowspan="3"> 查询公售比率:</th>
+    </tr>
+    <tr>
+        <th>Stage One</th>
+        <td>
+            <h9 id="stageOneResult"></h9>
+            /100000
+        </td>
+    </tr>
+    <tr>
+        <th>Stage Two</th>
+        <td>
+            <h9 id="stageTwoResult"></h9>
+            /100000
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button class="checkPublicSellRateButton">确认</button>
+        </td>
+    </tr>
+
+    <tr>
+        <th>关闭公募</th>
+
+        <td>
+            <button class="closePublicSellButton">确认</button>
+        </td>
+    </tr>
+
+    <tr>
+        <th>权限转移</th>
+        <td><input type="text" style="width:360px;" id="targetAddressPublicSellOwnerTransfer"></td>
+        <td>
+            <button class="transferPublicSellOwnerButton">确认</button>
+        </td>
+    </tr>
+
+    <tr>
+        <th>查询拥有者</th>
+        <td>
+            <h9 id="publicSellOwner"></h9>
+        </td>
+        <td>
+            <button class="checkPublicSellOwnerButton">查询</button>
+        </td>
+    </tr>
+    <tr>
+        <th>查询公募状态</th>
+        <td>
+            <h9 id="sellAmount">xx</h9>
+            /
+            <h9 id="totalAmount">xxx</h9>
+        </td>
+        <td>
+            <button class="checkPublicSellStatusButton">查询</button>
+        </td>
+    </tr>
+
+</table>
+
+
+<h4>AirDrop Contract</h4>
+<table border="1">
+
+    <tr>
+        <th>关闭空投</th>
+
+        <td>
+            <button class="closeAirDropButton">确认</button>
+        </td>
+    </tr>
+
+    <tr>
+        <th>权限转移</th>
+        <td><input type="text" style="width:360px;" id="targetAddressAirDropOwnerTransfer"></td>
+        <td>
+            <button class="transferAirDropOwnerButton">确认</button>
+        </td>
+    </tr>
+
+    <tr>
+        <th>查询拥有者</th>
+        <td>
+            <h9 id="airDropOwner"></h9>
+        </td>
+        <td>
+            <button class="checkAirDropOwnerButton">确认</button>
+        </td>
+    </tr>
+
+</table>
+
+<br> <br>
+<br> <br>
+<br> <br>
+
+<div style="border: 1px solid red;">
+    <h2>上传CSV文件</h2>
+    <input type="file" id="file" accept=".csv" onchange="uploadfile();"/>
+    <div id="result"></div>
+</div>
+
+<button class="approveGroupTransferButton">approve</button>
+<br> <br>
+<button class="groupTransferButton">确认转账</button>
+
+
+<br> <br>
+<br> <br>
+<br> <br>
+
+<button class="metaMaskEnableButton">连接钱包</button>
+
+<h1>当前账户:</h1>
+
+<h3 id="currentAccount"></h3>
+
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+<script src="../static/js/bignumber.js/bignumber.js"></script>
+<script>
+    let currentAccount;
+    let web3MetaMask;
+    let airDropBalance;
+    let receiptHash;
+    let amountTotalGrouTransfer = 0;
+    const decexAddress = '0x634ACd9350f7dA87542e0c9DF497315E879588f2';
+    const airDropAddress = '0x2C1534D301480b3E1D4eC5164eFfA7D6F732ABAE';
+    const publicSaleAddress = '0x67db178a85247CA34cd8968AFc5A05fB2B1d7fC2';
+
+    const groupTransferABI = [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "address[]",
+                    "name": "addresslist",
+                    "type": "address[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "rewardList",
+                    "type": "uint256[]"
+                }
+            ],
+            "name": "groupPublicAirdrop",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+
+        }
+    ];
+    const groupTransferToken = '0xd6924B3f176F0eC82ead0a49eEfaC9518635d62a';
+
+
+    const decexAbi = [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "toBurn_rate",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "toLiquidity_rate",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "toBuyBack_rate",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "toProject_rate",
+                    "type": "uint256"
+                }
+            ],
+            "name": "setChargeFee",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "_toBurn_rate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "_toBuyBack_rate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+
+
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "_toLiquidity_rate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+
+
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "_toProject_rate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+
+
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "_whiteList",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+
+
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_user",
+                    "type": "address"
+                }
+            ],
+            "name": "addWhiteList",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+
+
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_user",
+                    "type": "address"
+                }
+            ],
+            "name": "removeWhiteList",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+
+
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "target",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "freeze",
+                    "type": "bool"
+                }
+            ],
+            "name": "freezeAccount",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+
+
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "_frozenAccount",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "spender",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "approve",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ];
+
+    const publicSellAbi = [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "rate1",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "rate2",
+                    "type": "uint256"
+                }
+            ],
+            "name": "ChangePublicSellRates",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "ClosePublicSell",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "_PublicSellSupply",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+
+
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "_publicSellStageMaxAmount",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+
+
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "_PublicSellStageOneRate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+
+
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "_PublicSellStageTwoRate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+
+
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ];
+
+    const airDropAbi = [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "on_off",
+                    "type": "bool"
+                }
+            ],
+            "name": "ClosePublicAirdropEvent",
+            "type": "event"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+
+    ];
+
+
+    const metaMaskEnableButton = document.querySelector('.metaMaskEnableButton');
+
+    const changeChargeFeeButton = document.querySelector('.changeChargeFeeButton');
+    const queryChargeFeeButton = document.querySelector('.queryChargeFeeButton');
+
+
+    const addWhiteListButton = document.querySelector('.addWhiteListButton');
+    const removeWhiteListButton = document.querySelector('.removeWhiteListButton');
+    const checkWhiteListButton = document.querySelector('.checkWhiteListButton');
+
+
+    const frozenAccountButton = document.querySelector('.frozenAccountButton');
+    const unfrozenAccountButton = document.querySelector('.unfrozenAccountButton');
+    const checkFrozenAccountButton = document.querySelector('.checkFrozenAccountButton');
+
+
+    const transferDecexOwnerButton = document.querySelector('.transferDecexOwnerButton');
+    const checkDecexOwnerButton = document.querySelector('.checkDecexOwnerButton');
+
+
+    const changePublicSellRateButton = document.querySelector('.changePublicSellRateButton');
+    const checkPublicSellRateButton = document.querySelector('.checkPublicSellRateButton');
+    const closePublicSellButton = document.querySelector('.closePublicSellButton');
+    const transferPublicSellOwnerButton = document.querySelector('.transferPublicSellOwnerButton');
+    const checkPublicSellOwnerButton = document.querySelector('.checkPublicSellOwnerButton');
+    const checkPublicSellStatusButton = document.querySelector('.checkPublicSellStatusButton');
+
+    const closeAirDropButton = document.querySelector('.closeAirDropButton');
+    const transferAirDropOwnerButton = document.querySelector('.transferAirDropOwnerButton');
+    const checkAirDropOwnerButton = document.querySelector('.checkAirDropOwnerButton');
+
+    const groupTransferButton = document.querySelector('.groupTransferButton');
+
+    const approveGroupTransferButton = document.querySelector('.approveGroupTransferButton');
+
+
+    window.addEventListener('load', async () => {
+
+        //query if address had receiptHash in dataBase
+        //if true enable the getlink and check balance button
+
+        ethereum.autoRefreshOnNetworkChange = false;
+        if (window.ethereum) {
+            web3MetaMask = new Web3(window.ethereum);
+        } else if (window.web3) {
+            ///other wallet except metamask
+            // web3OthersWallet = new Web3(window.web3.currentProvider);
+            resolve(web3);
+        } else {
+            ///no wallet connected
+        }
+        approveGroupTransferButton.disabled = true;
+    });
+
+
+    metaMaskEnableButton.addEventListener('click', async () => {
+        if (typeof window.ethereum !== 'undefined') {
+            console.log('MetaMask is installed!');
+
+            getAccount_metaMask();
+        } else {
+            console.log('Please install MetaMask');
+        }
+
+    });
+
+    async function getAccount_metaMask() {
+        const accounts = await ethereum.request({method: 'eth_requestAccounts'});
+        currentAccount = accounts[0];
+        document.getElementById("currentAccount").innerHTML = currentAccount;
+
+    }
+
+    ethereum.on('accountsChanged', function (accounts) {
+        currentAccount = ethereum.selectedAddress;
+        // web3MetaMask.eth.defaultAccount = currentAccount;
+        // Time to reload your interface with accounts[0]!
+        document.getElementById("currentAccount").innerHTML = currentAccount;
+    });
+
+
+    changeChargeFeeButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(decexAbi, decexAddress);
+                var burnRate = document.getElementById("burnRate").value;
+                var liquidityRate = document.getElementById("liquidityRate").value;
+                var buyBackRate = document.getElementById("buyBackRate").value;
+                var projectRate = document.getElementById("projectRate").value;
+
+                contract.methods.setChargeFee(burnRate, liquidityRate, buyBackRate, projectRate).send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+                        changeChargeFeeButton.disabled = true;
+                        console.log(receiptHash);
+
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    queryChargeFeeButton.addEventListener('click', async () => {
+
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(decexAbi, decexAddress);
+                var burnRate = await contract.methods._toBurn_rate().call({from: ethereum.selectedAddress});
+                var liquidityRate = await contract.methods._toLiquidity_rate().call({from: ethereum.selectedAddress});
+                var buyBackRate = await contract.methods._toBuyBack_rate().call({from: ethereum.selectedAddress});
+                var projectRate = await contract.methods._toProject_rate().call({from: ethereum.selectedAddress});
+                console.log(burnRate, liquidityRate, buyBackRate, projectRate);
+                document.getElementById("burnRateCurrent").innerHTML = burnRate;
+                document.getElementById("liquidityRateCurrent").innerHTML = liquidityRate;
+                document.getElementById("buyBackRateCurrent").innerHTML = buyBackRate;
+                document.getElementById("projectRateCurrent").innerHTML = projectRate;
+            } catch (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    addWhiteListButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(decexAbi, decexAddress);
+                var targetAddressWhite = document.getElementById("targetAddressWhite").value;
+
+                contract.methods.addWhiteList(targetAddressWhite).send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+                        changeChargeFeeButton.disabled = true;
+                        console.log(receiptHash);
+                        addWhiteListButton.disabled = true;
+                        ///upload buyer's transactionHash
+                        //upload buyer's invotelinkcode = last transactionHash
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    removeWhiteListButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(decexAbi, decexAddress);
+                var targetAddressBlack = document.getElementById("targetAddressBlack").value;
+                contract.methods.removeWhiteList(targetAddressBlack).send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+                        changeChargeFeeButton.disabled = true;
+                        console.log(receiptHash);
+                        removeWhiteListButton.disabled = true;
+                        ///upload buyer's transactionHash
+                        //upload buyer's invotelinkcode = last transactionHash
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    checkWhiteListButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(decexAbi, decexAddress);
+
+                var targetAddressCheck = document.getElementById("targetAddressCheck").value;
+
+                var isWhite = await contract.methods._whiteList(targetAddressCheck).call({from: ethereum.selectedAddress});
+
+
+                document.getElementById("whiteResult").innerHTML = isWhite ? "白" : "黑";
+
+                console.log(burnRate, liquidityRate, buyBackRate, projectRate);
+            } catch (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    frozenAccountButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(decexAbi, decexAddress);
+
+                var targetAddressFrozen = document.getElementById("targetAddressFrozen").value;
+
+                contract.methods.freezeAccount(targetAddressFrozen, true).send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+
+                        console.log(receiptHash);
+                        frozenAccountButton.disabled = true;
+
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    unfrozenAccountButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(decexAbi, decexAddress);
+                var targetAddressUnfrozen = document.getElementById("targetAddressUnfrozen").value;
+                contract.methods.freezeAccount(targetAddressUnfrozen, false).send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+
+                        console.log(receiptHash);
+
+                        unfrozenAccountButton.disabled = true;
+
+                        ///upload buyer's transactionHash
+                        //upload buyer's invotelinkcode = last transactionHash
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    checkFrozenAccountButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(decexAbi, decexAddress);
+                var targetAddressFrozenCheck = document.getElementById("targetAddressFrozenCheck").value;
+                var isFrozen = await contract.methods._frozenAccount(targetAddressFrozenCheck).call({from: ethereum.selectedAddress});
+                document.getElementById("frozenResult").innerHTML = isFrozen ? "frozen" : "unfrozen";
+                console.log();
+            } catch (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    transferDecexOwnerButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(decexAbi, decexAddress);
+                var targetAddressOwnerTransfer = document.getElementById("targetAddressOwnerTransfer").value;
+                contract.methods.transferOwnership(targetAddressOwnerTransfer).send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+                        console.log(receiptHash);
+                        transferDecexOwnerButton.disabled = true;
+
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    checkDecexOwnerButton.addEventListener('click', async () => {
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(decexAbi, decexAddress);
+
+                var owner = await contract.methods.owner().call({from: ethereum.selectedAddress});
+
+                console.log();
+
+                document.getElementById("decexOwner").innerHTML = owner;
+
+
+            } catch (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    changePublicSellRateButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(publicSellAbi, publicSaleAddress);
+                var rateOneChange = document.getElementById("rateOneChange").value;
+                var rateTwoChange = document.getElementById("rateTwoChange").value;
+                contract.methods.ChangePublicSellRates(rateOneChange, rateTwoChange).send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+                        console.log(receiptHash);
+                        changePublicSellRateButton.disabled = true;
+
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    checkPublicSellRateButton.addEventListener('click', async () => {
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(publicSellAbi, publicSaleAddress);
+                var stageOneResult = await contract.methods._PublicSellStageOneRate().call({from: ethereum.selectedAddress});
+                var stageTwoResult = await contract.methods._PublicSellStageTwoRate().call({from: ethereum.selectedAddress});
+                document.getElementById("stageOneResult").innerHTML = stageOneResult;
+                document.getElementById("stageTwoResult").innerHTML = stageTwoResult;
+
+
+                console.log();
+
+                document.getElementById("decexOwner").innerHTML = owner;
+
+
+            } catch (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    closePublicSellButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(publicSellAbi, publicSaleAddress);
+                contract.methods.ClosePublicSell().send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+
+                        closePublicSellButton.disabled = true;
+
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    transferPublicSellOwnerButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(publicSellAbi, publicSaleAddress);
+                var targetAddressOwnerTransfer = document.getElementById("targetAddressPublicSellOwnerTransfer").value;
+                contract.methods.transferOwnership(targetAddressOwnerTransfer).send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+                        console.log(receiptHash);
+                        transferPublicSellOwnerButton.disabled = true;
+
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    checkPublicSellOwnerButton.addEventListener('click', async () => {
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(publicSellAbi, publicSaleAddress);
+
+                var owner = await contract.methods.owner().call({from: ethereum.selectedAddress});
+
+
+                document.getElementById("publicSellOwner").innerHTML = owner;
+
+
+            } catch (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    checkPublicSellStatusButton.addEventListener('click', async () => {
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(publicSellAbi, publicSaleAddress);
+
+                var sellAmount = await contract.methods._PublicSellSupply().call({from: ethereum.selectedAddress}) / 1000000000000000000;
+                var totalAmount = await contract.methods._publicSellStageMaxAmount().call({from: ethereum.selectedAddress}) / 1000000000000000000;
+
+
+                document.getElementById("sellAmount").innerHTML = sellAmount;
+                document.getElementById("totalAmount").innerHTML = totalAmount;
+
+
+            } catch (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    closeAirDropButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(airDropAbi, airDropAddress);
+                contract.methods.ClosePublicAirdrop().send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+
+                        closeAirDropButton.disabled = true;
+
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    transferAirDropOwnerButton.addEventListener('click', async () => {
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(airDropAbi, airDropAddress);
+                var targetAddressOwnerTransfer = document.getElementById("targetAddressAirDropOwnerTransfer").value;
+                contract.methods.transferOwnership(targetAddressOwnerTransfer).send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+                        console.log(receiptHash);
+                        transferPublicSellOwnerButton.disabled = true;
+
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+    checkAirDropOwnerButton.addEventListener('click', async () => {
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(airDropAbi, airDropAddress);
+
+                var owner = await contract.methods.owner().call({from: ethereum.selectedAddress});
+
+
+                document.getElementById("airDropOwner").innerHTML = owner;
+
+
+            } catch (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+
+    function uploadfile() {
+        let reads = new FileReader();
+        let targetAddress = [];
+        let airDropAmount = [];
+        let resultAfter = [];
+
+        file = document.getElementById('file').files[0];
+        reads.readAsText(file, 'utf-8');
+
+        reads.onloadend = function (e) {
+            let fileData = reads.result;
+            let rows = fileData.split('\n');
+            let target = rows.slice(1, rows.length - 1);
+
+
+            for (var i = 0, len = target.length; i < len; i++) {
+                if (target[i].length > 5) {
+
+
+                    let one = target[i].split(',');
+                    amountTotalGrouTransfer = amountTotalGrouTransfer + parseFloat(one[1]);
+
+                    targetAddress.push(one[0]);
+                    airDropAmount.push(one[1]);
+
+                    resultAfter.push([i, one[0], one[1], '\n'])
+
+
+                }
+            }
+
+            document.getElementById('result').innerText = resultAfter;
+            approveGroupTransferButton.disabled = false;
+
+            approveGroupTransferButton.innerText = "approve" + "  " + amountTotalGrouTransfer + "  DCX";
+
+
+        }
+        console.log(targetAddress);
+
+        console.log(airDropAmount);
+
+        console.log(amountTotalGrouTransfer);
+
+    }
+
+    approveGroupTransferButton.addEventListener('click', async () => {
+
+        let x = new BigNumber(amountTotalGrouTransfer * 1000000000000000000);
+// (amountTotalGrouTransfer*1000000000000000000).toString(16)
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(decexAbi, decexAddress);
+                var targetAddressOwnerTransfer = document.getElementById("targetAddressAirDropOwnerTransfer").value;
+                contract.methods.approve(groupTransferToken, x).send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+
+                        approveGroupTransferButton.disabled = true;
+
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+
+    groupTransferButton.addEventListener('click', async () => {
+
+
+        if (window.ethereum) {
+            try {
+                web3MetaMask.eth.defaultAccount = currentAccount;
+                const contract = await new web3MetaMask.eth.Contract(airDropAbi, airDropAddress);
+                var targetAddressOwnerTransfer = document.getElementById("targetAddressAirDropOwnerTransfer").value;
+                contract.methods.transferOwnership(targetAddressOwnerTransfer).send({from: ethereum.selectedAddress})
+                    .on('transactionHash', function (hash) {
+                    })
+                    .on('confirmation', function (confirmationNumber, receipt) {
+                    })
+                    .on('receipt', function (receipt) {
+                        receiptHash = receipt.transactionHash;
+                        console.log(receiptHash);
+                        transferPublicSellOwnerButton.disabled = true;
+
+                    })
+                    .on('error', function (error, receipt) { // If the transaction was rejected by the network with a receipt, the second parameter will be the receipt.
+                        console.log(error);
+                    });
+
+            } catch
+                (e) {
+                console.log(e);
+            }
+        } else if (window.web3) {
+            ////other wallets
+        }
+    });
+
+
+</script>
+</html>

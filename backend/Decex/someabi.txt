@@ -1,0 +1,180 @@
+ const publicSellAbi = [
+            {
+                "constant": false,
+                "inputs": [],
+                "name": "publicSellStatus",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+
+            },
+            {
+                "constant": false,
+                "inputs": [],
+                "name": "publicBuy",
+                "outputs": [],
+                "stateMutability": "payable",
+                "type": "function"
+            },
+            {
+                "constant": false,
+                "inputs": [],
+                "name": "_PublicSellStageOneRate",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+
+            },
+            {
+                "constant": false,
+                "inputs": [],
+                "name": "_PublicSellStageTwoRate",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "",
+                        "type": "uint256"
+                    }
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            }
+        ];
+
+
+    const airDropAbi = [
+                {
+                    "constant": false,
+                    "inputs": [],
+                    "name": "claimPublicAirdrop",
+                    "outputs": [
+                        {
+                            "internalType": "bool",
+                            "name": "",
+                            "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+
+                },
+                {
+                    "constant": false,
+                    "inputs": [],
+                    "name": "publicAirdropStatus",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "constant": false,
+                    "inputs": [],
+                    "name": "queryReward",
+                    "outputs": [
+                        {
+                            "internalType": "uint256",
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "stateMutability": "view",
+                    "type": "function"
+
+                },
+                {
+                    "constant": false,
+                    "inputs": [],
+                    "name": "publicAddLiquidity",
+                    "outputs": [
+                        {
+                            "internalType": "bool",
+                            "name": "",
+                            "type": "bool"
+                        }
+                    ],
+                    "stateMutability": "payable",
+                    "type": "function"
+
+                },
+            ];
+
+
+
+
+publicAQabi = [
+{
+    "constant": false,
+    "inputs": [],
+    "name": "publicAddLiquidity",
+    "outputs": [
+        {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+        }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+
+}，
+
+{
+    "constant": false,
+     "inputs": [],
+      "name": "getDecexHad",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+
+},
+{
+    "constant": false,
+    "inputs": [],
+      "name": "getEthHad",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+}
+]
+
+

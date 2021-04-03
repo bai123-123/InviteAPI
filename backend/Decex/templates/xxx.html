@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+    <!-- -->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css">
+
+
+    <!-- 外部样式 style.css -->
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+    <title>Title</title>
+    <style>
+        .box {
+             width: 380px;
+            height: 100px;
+            position: fixed;
+            left: 38%;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div id="popPubSell" style="text-align: center;  background-color: lightgrey;" >
+        <div style="text-align: right;">
+            <input type="button" value="X" class="btn btn-close btn-lg"
+                   onclick="document.getElementById('popPubSell').style.display='none';"/>
+        </div>
+        <h4 style="margin-top: -0.3cm;">Public Sale is coming soon!</h4>
+        <div>
+            <img src="../static/img/Logo2.png" width="30%" height="30%">
+        </div>
+        <h6 style="margin-top: 0cm;">
+            Click the button below to explore more
+        </h6>
+
+
+        <a href="publicSale.html#publicsale" class="btn btn-warning btn-lg" role="button"
+           aria-pressed="true" style="margin-top: 0.2cm;color: #ffffff;;">
+            Public Sale
+        </a>
+         <h4 style="margin-bottom: -0.3cm;">&nbsp;</h4>
+
+    </div>
+</div>
+
+
+<div class="row justify-content-end">
+    <div class="col-4-md" style="padding: 0px; text-align: center;">
+        <div class="adjust">
+            <button type="button" class="btn btn-dark" onclick="showPopBox()">
+                <img src="../static/img/wallet.svg" width="23" height="23">
+                Unlock Wallet
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="popBox" id="popBox-demo" style="display:none">
+    <div class="popBox-mask"></div>
+    <div class="popBox-content">
+        <p>xxxx</p>
+    </div>
+
+</div>
+
+
+<div id="light" class="white_content" style="text-align: center">
+    <div style="text-align: right;">
+        <input type="button" value="X" class="btn btn-close btn-lg"
+               onclick="document.getElementById('light').style.display='none';"/>
+    </div>
+    <h4 style="margin-top: -0.3cm; margin-bottom: 2cm;">Unlock Your Wallet</h4>
+    <button class="btn btn-primary">Metamask</button>
+</div>
+
+
+</body>
+
+<script>
+    function showPopBox() {
+        document.getElementById('popBox-demo').style.display = 'block';
+        document.getElementById('fade').style.display = 'block';
+    }
+
+</script>
+</html>

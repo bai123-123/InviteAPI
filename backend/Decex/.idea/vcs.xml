@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/dcx-vue" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/de_-cex" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frontend" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frontend_new" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/frontend_old" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/static/js/bignumber.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tmp/Decex" vcs="Git" />
+  </component>
+</project>

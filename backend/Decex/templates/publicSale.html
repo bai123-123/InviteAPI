@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Public Sale</title>
+
+    <!-- 设置文档编码 -->
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+    <!-- -->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+
+    <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css">
+
+
+    <!-- 外部样式 style.css -->
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+
+    <style>
+        body {
+            background-image: url("../static/img/bbb20-min1.jpg");
+            background-repeat: repeat-y;
+            background-size: 100%;
+            background-color: #0c62af;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Image and text -->
+        <nav class="navbar navbar-expand-md fixed-top navbar-light" style="background-color: #000000c0;">
+            <a class="navbar-brand" href="../templates/index.html" style="color: #ffffff">
+                <img src="../static/img/Logo1.svg" width="30" height="30" class="d-inline-block align-top" alt=""
+                    loading="lazy">
+                DeCEX
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="publicSale.html#publicsale" class="nav-link1">Public Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nft.html" class="nav-link1">NFTs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: #dddddd;">
+                            NFT Ecosystem
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item">NFT Auction</a></li>
+                            <li><a class="dropdown-item">NFT Farming</a></li>
+                            <li><a class="dropdown-item">NFT Gaming</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="text-align: center;">
+                        &nbsp;
+                        <a href="https://drive.google.com/file/d/1YVWkbCoFJo-jvC1imMVDxCEtzIrNnLpN/view?usp=sharing"
+                            class="btn btn-primary" style="color: #ffffff;">
+                            Whitepaper</a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item" style="text-align: center;">
+                        &nbsp;
+                        <a href="../static/DeСEXauditreport.pdf" class="btn btn-primary" tabindex="-1" role="button"
+                            aria-disabled="true">
+                            Audit</a>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item" style="text-align: center;">
+                        &nbsp;
+                        <a href="https://drive.google.com/file/d/1B_Cn0P_Ls4wAf6SqMFtW0-dy-OWlMgnG/view?usp=sharing" class="btn btn-primary" tabindex="-1" role="button"
+                            aria-disabled="true">
+                            Roadmap</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section style="margin-top: 2.3cm;">
+        <section style="margin-top: 2.3cm;">
+            <div class="container">
+                <div class="row justify-content-end" style="margin-bottom: 1.5cm;">
+                    <div class="col">
+                        <img src="../static/img/Logo2.png" width="30%">
+                        <img src="../static/img/white.png" width="40%">
+                    </div>
+                    <div class="col" style="padding: 0px; text-align: right; ">
+                        <button type="button" class="btn btn-dark">
+                            <a
+                                onclick="document.getElementById('wallet').style.display='block';">
+                                <img src="../static/img/wallet.svg" width="23" height="23">
+                                Unlock Wallet
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div id="wallet" class="white_content_wallet" style="text-align: center">
+                    <div style="text-align: right;">
+                        <input type="button" value="X" class="btn btn-close btn-lg"
+                            onclick="document.getElementById('wallet').style.display='none';" />
+                    </div>
+                    <h4 style="margin-top: -0.3cm; margin-bottom: 2cm;">Unlock Your Wallet</h4>
+                    <button class="btn btn-primary">Metamask</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section style="margin-top: 1cm;">
+        <div class="container">
+            <div class="row justify-content-center" style="margin-top: 2cm;">
+                <div class="col-lg" style="vertical-align: middle;">
+
+                    <h1 style="color: #ffffff;">Airdrop Claim</h1>
+                    <p style="color: #ffffff; margin-top: 1.5cm;margin-bottom: 1cm;">
+                        We chose 1000 winners randomly from all participants.
+                    </p>
+                    <a 
+                        style="color: #ffffff; font-size: 18px;">
+                        <img src="../static/img/excel.png" width="100%" style="min-width: 30px;max-width: 30px;">&nbsp;
+                        DeCEXPublicAirdropRegistration.csv
+                    </a>
+                    <p style="color: #ffffff; margin-top: 0.2cm; margin-bottom: 1cm;font-size: 18px;">
+                        <img src="../static/img/excel.png" width="100%" style="min-width: 30px;max-width: 30px;">&nbsp;
+                        DeCEXPublicAirdropWinner.csv
+                    </p>
+
+                </div>
+                <div class="col" style="vertical-align: middle;text-align: center;">
+                    <div><img src="../static/img/airdrop1.png" width="100%" style="min-width: 180px;max-width: 250px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center" style="margin-top: 1cm;">
+                <div class="col-lg">
+                    <h5 style="color: #ffffff; margin-top: 1cm;">
+                        Click "Check" to check your airdrop balance
+                    </h5>
+                    <h5 style="color: #ffffff; margin-top: 0.5cm;">
+                        Your Airdrop Balance:
+                    </h5>
+                    <button type="check" class="btn btn-warning"
+                        style="font-size: 20px; margin-top: 0.5cm;color: #ffffff;">Check</button>
+                </div>
+                <div class="col-lg">
+                    <h5 style="color: #ffffff; margin-top: 1cm;">
+                        Click "Claim" to claim your airdrop
+                    </h5>
+                    <h5 style="color: #ffffff; margin-top: 0.5cm;">
+                        &nbsp;
+                    </h5>
+                    <button type="claim" class="btn btn-warning" id="publicsale"
+                        style="font-size: 20px; margin-top: 0.5cm;color: #ffffff;">Claim</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h1 style="color: #ffffff; margin-top: 2.5cm;">Public Token Sale</h1>
+            <p style="color: #ffffff; margin-top: 1.5cm;">
+                DeCEX is an innovative platform that seamlessly integrates together the universes of DeFi and NFTs,
+                bringing together NFT gaming, NFTswap and NFT vault all in one ecosystem.
+            </p>
+            <h5 style="color: #ffffff;">You will be eligible to get
+                <a href="#getlink" style="color: #a8aeff;">DeCEX Genesis NFT</a>
+                if you purchase 1 ETH or more through the public sale event.</h5>
+            <h5 style="color: #ffffff;">You will be eligible to get a
+                <a href="#buy" style="color: #a8aeff;">Referral Link</a>
+                for extra bonus after your purchase.</h5>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" style="margin-top: 1cm;">
+                        <div class="col">
+                            <div class="card"
+                                style="margin:20px 20px 20px 20px; text-align: center; background-color: #00000050;">
+                                <div class="card-body" style="color: #ffffff;">
+                                    <h5 class="card-title">Token Price</h5>
+                                    <p class="card-text">1ETH = 650DCX</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card"
+                                style="margin:20px 20px 20px 20px; text-align: center; background-color: #00000050;">
+                                <div class="card-body" style="color: #ffffff;">
+                                    <h5 class="card-title">Total Supply</h5>
+                                    <p class="card-text">1,000,000DCX</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card"
+                                style="margin:20px 20px 20px 20px; text-align: center; background-color: #00000050;">
+                                <div class="card-body" style="color: #ffffff;">
+                                    <h5 class="card-title">Token Contract</h5>
+                                    <a href="https://etherscan.io/address/0x2A3a8F2d0487fbf654cd530B5F0A1d9467935D6a"
+                                        style="color: #a8aeff;">View
+                                        Here</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="card"
+                                style="margin:20px 20px 20px 20px; text-align: center; background-color: #00000050;">
+                                <div class="card-body" style="color: #ffffff;">
+                                    <h5 class="card-title">Token Hard Cap</h5>
+                                    <p class="card-text">800ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card"
+                                style="margin:20px 20px 20px 20px; text-align: center; background-color: #00000050;">
+                                <div class="card-body" style="color: #ffffff;">
+                                    <h5 class="card-title">Token Soft Cap</h5>
+                                    <p class="card-text">500ETH</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card"
+                                style="margin:20px 20px 20px 20px; text-align: center; background-color: #00000050;">
+                                <div class="card-body" style="color: #ffffff;">
+                                    <h6 class="card-title">Uniswap List Price</h6>
+                                    <p class="card-text">1ETH=400DCX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <form style="margin-top:0.5cm; text-align: center">
+                            <div class="mb-3；text-align: center">
+                                <label for="exampleInputEmail1" class="form-label"
+                                    style="color: #ffffff;font-size: 25px;">
+                                    ETH Amount(0.1-5ETH)</label>
+                                <div>
+                                    <input style="width: 300px; text-align: right;font-size: 25px; margin-top:0.3cm"
+                                        type="amount" id="amount1" aria-describedby="emailHelp"
+                                        oninput="value=value.replace(/^\D*(\d*(?:\.\d{0,1})?).*$/g, '$1');if(value>50)value=50;if(value<0)value=0">
+
+                                </div>
+
+                                <div style="margin-top: 0.5cm;margin-bottom: 0.5cm;padding-right:0cm">
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 2cm;font-size: 20px"
+                                        onclick="document.getElementById('amount1').value='1';">&nbsp;1&nbsp;</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 2cm;font-size: 20px"
+                                        onclick="document.getElementById('amount1').value='2';">&nbsp;2&nbsp;</button>
+                                    <button type="button" class="btn btn-light" style="font-size: 20px"
+                                        onclick="document.getElementById('amount1').value='5';">&nbsp;5&nbsp;</button>
+                                </div>
+                                <div>
+                                    <button class="btn btn-warning" id="buy"
+                                        style=" margin-bottom: 0.3cm; font-size: 25px; color: #ffffff;">&nbsp;&nbsp;Buy&nbsp;&nbsp;</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs">
+                    <img class="pieChart" src="../static/img/pieChart6.png" style="margin-top:1.5cm" width="339px"
+                        height="455px">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h1 style="color: #ffffff; margin-top: 2.5cm;">Referral Link</h1>
+                    <p style="color: #ffffff; margin-top: 1.5cm;">
+                        The user who buy tokens or claim airdrop can get a unique referral link.
+                        If someone buy DCX through your link, you will get 5% bonus of the purchase amount.</p>
+                </div>
+                <div class="col-md" style="text-align: center;">
+                    <div><img src="../static/img/referral.png" width="100%"
+                            style="min-width: 150px;max-width: 200px;margin-top: 2.5cm;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center" style="margin-top: 0cm;">
+                <div class="col-lg">
+                    <h5 style="color: #ffffff; margin-top: 1cm;">
+                        Click "Get Link" to get your referral link
+                    </h5>
+                    <h5 style="color: #ffffff; margin-top: 0.5cm;">
+                        Your Referral Link:
+                    </h5>
+                    <button type="GetLink" id="getlink" class="btn btn-warning"
+                        style="font-size: 20px; margin-top: 0.5cm;color: #ffffff;">Get Link</button>
+                </div>
+                <div class="col-lg">
+                    <h5 style="color: #ffffff; margin-top: 1cm;">
+                        Click "Check" to check your referral balance
+                    </h5>
+                    <h5 style="color: #ffffff; margin-top: 0.5cm;">
+                        Your Referral Balance:
+                    </h5>
+                    <button type="check" class="btn btn-warning"
+                        style="font-size: 20px; margin-top: 0.5cm;color: #ffffff;">Check</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h1 style="color: #ffffff; margin-top: 4cm;">Genesis NFT</h1>
+                    <p style="color: #ffffff;margin-top: 1cm;">
+                        You will be eligible to get DeCEX Genesis NFT if you purchase 1 ETH or more through the public
+                        sale event.
+                    </p>
+                    <p style="color: #ffffff; margin-top: 1cm;">
+                        <br>The Benefits of Genesis NFT Holders：
+                        <br>1. Staking Genesis NFT to earn DCX (50,000 tokens supply)
+                        <br>2. The genesis NFT can be sold in NFTswap (developed later)
+                        <br>3. Exclusive benefits in NFT gaming
+                        <br>4. The priority to get airdrop from DeCEX collaborated crypto project
+                    </p>
+                    <a href="nft.html" class="btn btn-info btn-lg" role="button" aria-pressed="true"
+                        style="margin-top: 1cm;">
+                        Explore NFTs</a>
+                </div>
+                <div class="col-md" style="text-align: center;margin-top: 1cm;">
+                    <div><img src="../static/img/Genesis8_900.gif" width="100%"
+                            style="min-width: 150px;max-width: 400px;margin-top: 2.5cm;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="background-color: #000000c0;">
+        <div class="container">
+            <div class="row justify-content-center" style="margin-top: 3cm;margin-bottom: 1cm;">
+                <div class="col-2">
+                    <div class="icon1" style="margin-top: 1cm;">
+                        <a href="https://t.me/DeCEXofficial" style="color: #00000000;">
+                            bbb
+                        </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="icon2" style="margin-top: 1cm;">
+                        <a href="https://twitter.com/decexfinance" style="color: #00000000;">
+                            bbb
+                        </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="icon3" style="margin-top: 1cm;">
+                        <a href="https://medium.com/@decexfinance" style="color: #00000000;">
+                            bbb
+                        </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="icon4" style="margin-top: 1cm;">
+                        <a href="https://github.com/DecexFinanace/DeCex-token" style="color: #00000000;">
+                            bbb
+                        </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="icon5" style="margin-top: 1cm;">
+                        <a href="https://etherscan.io/address/0x2A3a8F2d0487fbf654cd530B5F0A1d9467935D6a"
+                            style="color: #00000000;">
+                            bbb
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" style="margin-top: 0.5cm; padding-right: 70px;">
+                <div class="col" style="text-align: right;">
+                    <img src="../static/img/Logo1.svg" width="80" height="80" class="d-inline-block align-top" alt=""
+                        loading="lazy">
+                </div>
+                <div class="col" style="text-align: left;margin-left: -50px;">
+                    <img src="../static/img/white.png" width="150" class="d-inline-block align-top" loading="lazy">
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-top: 1cm;">
+                <a href="team.html" style="color: #dddbdb;">
+                    Project Team
+                </a>
+            </div>
+            <div class="row justify-content-center" style="margin-top: 1cm;padding-bottom: 1cm;">
+                <a href="mailto:admin@decex.finance" style="color: #dddbdb;">
+                    admin@decex.finance
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>

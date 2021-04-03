@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4898022e-007f-40df-8eda-7d9ef15392d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/de_-cex/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/.browserslistrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/.gitee/ISSUE_TEMPLATE.zh-CN.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/.gitee/PULL_REQUEST_TEMPLATE.zh-CN.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/README.en.md" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/README.en.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/458dd84d8a152233a4f7.worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/458dd84d8a152233a4f7.worker.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/css/app.f8f668a8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/css/chunk-5f94af9b.d223aae6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/css/chunk-6bb7229f.f934c336.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/css/chunk-771b52d2.39860896.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/css/chunk-f117ff7e.44029306.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/css/chunk-vendors.c8114761.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/fonts/element-icons.535877f5.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/fonts/element-icons.732389de.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/AC_900_TRA_L.5686b335.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/AirdropAlert.a0689485.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/Crypto-Exploit.24feb1dc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/Genesis10_900_TRA.6ff2dfbd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/Logo1.f99cab4c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/Logo2.be3dc2f7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/Messi_900_TRA.fd09fafb.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/airdrop1.f913b44f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/bbb20-min1.43ab889b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/bird3.e9465548.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/bird5.c02d5b00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/blockchain.b41691e7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/cloud.a12b72a5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/cloud1.3f40c882.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/cloud2.b7b2984e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/coins1.1c95a066.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/computer.9e2197be.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/cry.d7563794.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/fire1.8537d5f4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/gift1.ccc96373.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/github.6e619afd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/head1.26045205.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/head2.bb1e1698.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/head4.c1860e43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/head5.6f588bc4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/head7.dc0e184c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/island4.20b47de3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/kick-off.922ae0b5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/langhua.486ef39e.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/medium.0b844df1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/next1.33e45a68.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/pieChart6.28ac49eb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/rarible.8f9f7683.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/referral.e95f6cdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/sky4.b1db4385.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/telegram1.baa8ed26.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/twitter.108b4799.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/wallet.48d6a8e4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/img/zemm.7b6b6127.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/js/app.dab3a9aa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/js/app.dab3a9aa.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/js/chunk-5f94af9b.a4130c3b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/js/chunk-5f94af9b.a4130c3b.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/js/chunk-6bb7229f.da951cb2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/js/chunk-6bb7229f.da951cb2.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/js/chunk-771b52d2.009071a3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/js/chunk-771b52d2.009071a3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/js/chunk-f117ff7e.ab148ca0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/js/chunk-f117ff7e.ab148ca0.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/js/chunk-vendors.04d47aa4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/dist/js/chunk-vendors.04d47aa4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/api/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/api/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/api/common/home.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/api/common/home.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/api/common/login.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/api/common/login.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/api/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/api/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/assets/home/coins1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/assets/home/coins1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/assets/home/cry.svg" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/assets/home/cry.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/assets/home/fire1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/assets/home/fire1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/assets/home/gift1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/assets/home/gift1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/assets/home/medium.svg" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/assets/home/medium.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/assets/home/next1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/assets/home/next1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/assets/home/telegram1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/assets/home/telegram1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/assets/home/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/assets/home/twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/assets/home/wallet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/assets/home/wallet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/assets/ntf/rarible.svg" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/assets/ntf/rarible.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/common/fastclick.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/common/fastclick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/components/common/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/components/common/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/components/common/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/components/common/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/components/common/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/components/common/NavBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/components/common/captcha.vue" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/components/common/captcha.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/components/common/detailPopup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/components/common/detailPopup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/components/common/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/components/common/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/components/js/chart-base.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/components/js/chart-base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/components/js/chart-feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/components/js/chart-feed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/components/js/chart-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/components/js/chart-provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/components/js/chart-stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/components/js/chart-stream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/config/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/config/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/contractlist/contractlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/contractlist/contractlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/filters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/filters/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/lang/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/lang/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/lang/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/router/modules/login.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/router/modules/login.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/script/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/script/filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/store/modules/captcha.store.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/store/modules/captcha.store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/store/modules/user.store.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/store/modules/user.store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/style/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/style/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/style/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/style/mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/style/mixin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/style/progress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/style/progress.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/style/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/style/reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/style/vant.scss" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/style/vant.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/style/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/style/vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/views/home/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/views/home/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/views/nft/nft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/views/nft/nft.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/views/publicSale/publicSale.vue" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/views/publicSale/publicSale.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/views/team/team.vue" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/views/team/team.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/walletconnect/math.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/walletconnect/math.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/src/walletconnect/walletconnect.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/src/walletconnect/walletconnect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de_-cex/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/de_-cex/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/.browserslistrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/.gitee/ISSUE_TEMPLATE.zh-CN.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/.gitee/ISSUE_TEMPLATE.zh-CN.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/.gitee/PULL_REQUEST_TEMPLATE.zh-CN.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/.gitee/PULL_REQUEST_TEMPLATE.zh-CN.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/README.en.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/README.en.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/97660478178dcb8e6e56.worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/dist/97660478178dcb8e6e56.worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/img/coins1.1c95a066.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/img/cry.356dce8b.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/dist/img/cry.356dce8b.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/img/fire1.6c8145ff.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/dist/img/fire1.6c8145ff.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/img/gift1.ccc96373.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/img/medium.0b844df1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/img/next1.33e45a68.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/img/rarible.8f9f7683.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/img/telegram1.baa8ed26.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/img/twitter.108b4799.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/img/wallet.48d6a8e4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/js/app.fd58071f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/js/app.fd58071f.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/js/chunk-2bed2148.45eccab6.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/dist/js/chunk-2bed2148.45eccab6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/js/chunk-35fac898.b980c4f9.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/dist/js/chunk-35fac898.b980c4f9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/js/chunk-6d9d678f.dac90171.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/js/chunk-6d9d678f.dac90171.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/js/chunk-acf43c76.7a27c4b5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/js/chunk-acf43c76.7a27c4b5.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/dist/js/chunk-vendors.4ca6f596.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/dist/js/chunk-vendors.4ca6f596.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/api/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/api/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/api/common/home.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/api/common/home.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/api/common/login.api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/api/common/login.api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/api/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/api/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/assets/home/coins1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/assets/home/coins1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/assets/home/cry.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/assets/home/cry.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/assets/home/fire1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/assets/home/fire1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/assets/home/gift1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/assets/home/gift1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/assets/home/medium.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/assets/home/medium.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/assets/home/next1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/assets/home/next1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/assets/home/telegram1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/assets/home/telegram1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/assets/home/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/assets/home/twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/assets/home/wallet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/assets/home/wallet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/assets/ntf/rarible.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/assets/ntf/rarible.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/common/fastclick.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/common/fastclick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/components/common/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/components/common/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/components/common/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/components/common/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/components/common/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/components/common/NavBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/components/common/captcha.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/components/common/captcha.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/components/common/detailPopup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/components/common/detailPopup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/components/common/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/components/common/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/components/js/chart-base.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/components/js/chart-base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/components/js/chart-feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/components/js/chart-feed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/components/js/chart-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/components/js/chart-provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/components/js/chart-stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/components/js/chart-stream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/config/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/config/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/filters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/filters/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/lang/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/lang/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/lang/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/router/modules/login.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/router/modules/login.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/script/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/script/filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/store/modules/captcha.store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/store/modules/captcha.store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/store/modules/user.store.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/store/modules/user.store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/style/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/style/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/style/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/style/mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/style/mixin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/style/progress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/style/progress.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/style/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/style/reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/style/vant.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/style/vant.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/style/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/style/vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/views/home/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/views/home/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/views/nft/nft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/views/nft/nft.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/views/publicSale/publicSale.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/views/publicSale/publicSale.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/src/views/team/team.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/src/views/team/team.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend_old/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend_old/vue.config.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Decex" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/de_-cex" />
+  </component>
+  <component name="ProjectId" id="1kaEmmCYEg8X68xNM0GIhBlOBlt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testDecex/views" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Decex" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Decex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4898022e-007f-40df-8eda-7d9ef15392d1" name="Default Changelist" comment="" />
+      <created>1605930462890</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605930462890</updated>
+      <workItem from="1605930536655" duration="25000" />
+      <workItem from="1605993528883" duration="6285000" />
+      <workItem from="1606384177129" duration="10420000" />
+      <workItem from="1606472870488" duration="2892000" />
+      <workItem from="1607922959394" duration="3218000" />
+      <workItem from="1607993312397" duration="5238000" />
+      <workItem from="1608638458289" duration="6999000" />
+      <workItem from="1609064856185" duration="2298000" />
+      <workItem from="1609330926206" duration="17126000" />
+      <workItem from="1609594738551" duration="23366000" />
+      <workItem from="1609759179712" duration="33045000" />
+      <workItem from="1610011200161" duration="8068000" />
+      <workItem from="1610420419187" duration="55456000" />
+      <workItem from="1610968996746" duration="701000" />
+      <workItem from="1611021060508" duration="88000" />
+      <workItem from="1611021165386" duration="2164000" />
+      <workItem from="1611027560361" duration="7841000" />
+      <workItem from="1611210119984" duration="16165000" />
+      <workItem from="1611292965717" duration="11723000" />
+      <workItem from="1611368543870" duration="96000" />
+      <workItem from="1611368786196" duration="56000" />
+      <workItem from="1611368886675" duration="58000" />
+      <workItem from="1611368958431" duration="14756000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

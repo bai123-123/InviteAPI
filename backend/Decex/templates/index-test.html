@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Home of DeCEX</title>
+
+    <!-- 设置文档编码 -->
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+    <!-- -->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+    <link rel="shortcut icon"
+          href="https://firebasestorage.googleapis.com/v0/b/decex-afd96.appspot.com/o/Logo.jpg?alt=media&token=80eb58f2-7d72-4c27-8be0-a3e549f64c2d"/>
+
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css">
+
+
+    <!-- 外部样式 style.css -->
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+
+
+    <!-- 外部JavaScript 文件 -->
+
+    <script src="../static/js/web3.min.js"></script>
+
+
+    <style>
+        body {
+            background-image: url("../static/img/bbb20-min.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-color: #0c62af;
+        }
+
+        .box {
+            width: 380px;
+            height: 100px;
+            position: fixed;
+            left: 35%;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-light" style="background-color: #000000c0;">
+        <a class="navbar-brand" href="/mainpage" style="color: #ffffff">
+            <img src="../static/img/Logo1.svg" width="30" height="30" class="d-inline-block align-top" alt=""
+                 loading="lazy">
+            DeCEX
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/publicSale#publicSellPos" class="nav-link1">Public Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/nft" class="nav-link1">NFTs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #dddddd">DCX Farming</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false" style="color: #dddddd;">
+                        NFT Ecosystem
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item">NFT Auction</a></li>
+                        <li><a class="dropdown-item">NFT Farming</a></li>
+                        <li><a class="dropdown-item">NFT Gaming</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item" style="text-align: center;">
+                    &nbsp;
+                    <a href="https://drive.google.com/file/d/1YVWkbCoFJo-jvC1imMVDxCEtzIrNnLpN/view?usp=sharing"
+                       class="btn btn-primary" style="color: #ffffff;">
+                        Whitepaper</a>
+                </li>
+                &nbsp;
+                <li class="nav-item" style="text-align: center;">
+                    &nbsp;
+                    <a href="../static/DeСEXauditreport.pdf" class="btn btn-primary" tabindex="-1" role="button"
+                       aria-disabled="true">
+                        Audit</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section style="margin-top: 2.3cm;">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-4-md" style="padding: 0px; text-align: center;">
+                <div class="adjust">
+                    <button type="button" class="btn btn-dark"
+                            onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+                        <img src="../static/img/wallet.svg" width="23" height="23">
+                        Unlock Wallet
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around" id="popBox-wallet">
+            <div id="light" class="white_content" style="text-align: center">
+                <div style="text-align: right;">
+                    <input type="button" value="X" class="btn btn-close btn-lg"
+                           onclick="document.getElementById('light').style.display='none';"/>
+                </div>
+                <h4 style="margin-top: -0.3cm; margin-bottom: 2cm;">Unlock Your Wallet</h4>
+                <button class="metaMaskEnableButton">Metamask</button>
+            </div>
+        </div>
+        <div class="box">
+            <div id="popPublicSell" style="text-align: center; background-color: white;">
+                <div style="text-align: right;">
+                    <input type="button" value="X" class="btn btn-close btn-lg"
+                           onclick="document.getElementById('popPublicSell').style.display='none';"/>
+                </div>
+                <h4 style="margin-top: -0.3cm;">Public Sale is coming soon!</h4>
+                <div>
+                    <img src="../static/img/Logo2.png" width="30%">
+                </div>
+                <h6 style="margin-top: 0cm;">
+                    Click the button below to explore more
+                </h6>
+                <a href="publicSale.html#publicsale" class="btn btn-warning btn-lg" role="button"
+                   aria-pressed="true" style="margin-top: 0.2cm;color: #ffffff;;">
+                    Public Sale
+                </a>
+                <h4 style="margin-bottom: -0.3cm;">&nbsp;</h4>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section>
+
+    <div class="container">
+        <div class="adjust1">
+            <img src="../static/img/white.png" width=35% class="d-inline-block align-top" loading="lazy">
+            <br>
+            <p style="color: #ffffff; margin-top: 0.5cm; max-width: 480px;">
+                DeCEX is an innovative platform that seamlessly integrates together the universes of DeFi and NFTs,
+                bringing together NFT gaming, NFTswap and NFT vault all in one ecosystem.
+                <br>
+                <br> The token public sale and airdrop claim is coming soon!
+            </p>
+            <br>
+            <a href="/publicSale-test#airDropPos" class=" btn btn-warning btn-lg" role="button" aria-pressed="true"
+               style="color: #ffffff; margin-top: 10px;">
+                Airdrop Claim</a>
+            &nbsp;
+            <a href="/publicSale-test#publicSellPos" class="btn btn-info btn-lg" role="button" aria-pressed="true"
+               style="margin-top: 10px;">
+                Public Sale</a>
+        </div>
+    </div>
+</section>
+
+<section style="margin-top: 4cm;">
+    <div class="container">
+        <div class="row justify-content-around" style="background-color: #00000091;">
+
+            <div class="col-3">
+                <table class="table table-bordered" style="margin-top: 50px;text-align: center;">
+                    <tbody>
+                    <tr>
+                        <th style="text-align: center; color: #ffffff">Initial Supply</th>
+                    </tr>
+                    <tr>
+                        <th style="text-align: center; color: #ffffff">1,000,000</th>
+                    </tr>
+                    </tbody>
+                </table>
+                <div style="padding: 20px 20px 20px 20px;text-align: center;">
+                    <img src="../static/img/next1.svg" width="30" height="30"
+                         style="margin-left: 18px; margin-right: 18px;">
+                </div>
+                <div style="text-align: center; padding: 10px;">
+                    <img src="../static/img/fire1.svg" width="40" height="40"
+                         style="margin-left: 23px; margin-right: 23px;">
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <img src="../static/img/next1.svg" width="30" height="30"
+                         style="margin-left: 18px; margin-right: 18px;">
+                </div>
+                <table class="table table-bordered" style="text-align: center; min-width: 105px;">
+                    <tbody>
+                    <tr>
+                        <th style="text-align: center; color: #ffffff">Ultimate Supply</th>
+                    </tr>
+                    <tr>
+                        <th style="text-align: center; color: #ffffff">200,917</th>
+                    </tr>
+                    </tbody>
+                </table>
+                <br>
+            </div>
+            <div class="col-6">
+                <div style="position: relative;top: 50%; transform: translateY(-50%);">
+                    <h1 class=" card-title" style="color: #ffffff; text-align: left;">Burning</h1>
+                    <p class="card-text" style="color: #ffffff;">
+                        The total supply of DCX will be burned from 1,000,000 to 200,917.
+                        The ultimate supply number 200,917 is to commemorate the releasing date of Uniswap Airdrop
+                        which on 17th Sep 2020.
+                        It shows our salute to Hayden Adams, the founder of Uniswap.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section style="margin-top: 3cm;" id="farms">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 style="color: #ffffff; margin-top: 2cm; font-size: 50px;">NFT Farms</h1>
+        </div>
+        <div class="row" style="margin-top: 1cm;">
+            <div class="col-lg">
+                <div class="card"
+                     style="margin:20px 20px 20px 20px; text-align: center; background-color: #ffffffb0;">
+                    <div style="text-align: center;">
+                        <img src="../static/img/kick-off.png" class="card-img-top" style="padding: 15px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">DCX Staking</h5>
+                        <p class="card-text">Earn Grass to exchange NFT</p>
+                        <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button"
+                           aria-disabled="true">
+                            <img src="../static/img/coins1.svg" width="30" height="30">
+                            &nbsp;Stake It
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="card"
+                     style="margin:20px 20px 20px 20px; text-align: center ; background-color: #ffffffb0">
+                    <div style="text-align: center;">
+                        <img src="../static/img/computer.png" class="card-img-top" style="padding: 15px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">LPV2 Staking</h5>
+                        <p class="card-text">Earn GrassV2 to exchange NFT</p>
+                        <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button"
+                           aria-disabled="true">
+                            <img src="../static/img/coins1.svg" width="30" height="30">
+                            &nbsp;Stake It
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="card"
+                     style="margin:20px 20px 20px 20px; text-align: center ; background-color: #ffffffb0">
+                    <div style="text-align: center;">
+                        <img src="../static/img/blockchain.png" class="card-img-top" style="padding: 15px;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lucky Draw</h5>
+                        <p class="card-text">Buy Lottery for NFT
+                        </p>
+                        <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button"
+                           aria-disabled="true">
+                            <img src="../static/img/gift1.svg" width="30" height="30">
+                            &nbsp;Buy lottery
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section style="margin-top: 3cm;">
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-6">
+                <div><img src="../static/img/Logo2.png" height="70%" style="max-height: 300px;"></div>
+            </div>
+            <div class="col-6">
+                <div><img src="../static/img/white.png" height="100%" style="max-height: 260px;"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container" style="margin-top: 0cm;color: #ffffff;">
+        <div class="row justify-content-center" style="margin-top: 1cm;">
+            <div class="col-4" style="vertical-align: middle;">
+                <div><img src="../static/img/head4.png" width="60%"
+                          style="border-radius:15px;border: 3px solid #b4b4b4;"></div>
+            </div>
+            <div class="col-8">
+                <div>
+                    <h4>&nbsp;Steven W</h3>
+                        <p>
+                            <br> • CEO and founder of DeCEX
+                            <br> • Expert in cryptocurrecy market
+                            <br> • Profound knowledge of Blockchain, DeFi and NFT
+                            <br> • Years of experience in the position of Senior Executive Officer
+                        </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin-top: 1cm;">
+            <div class="col-4" style="vertical-align: middle;">
+                <div><img src="../static/img/head1.png" width="60%"
+                          style="border-radius:15px;border: 3px solid #b4b4b4;"></div>
+            </div>
+            <div class="col-8" style="vertical-align: middle;">
+                <div>
+                    <h3>&nbsp;Jason L</h3>
+                    <p>
+                        <br> • Project manager
+                        <br> • Frontend developer
+                        <br> • Experienced in international IT product development
+                        <br> • Master of IT from Monash University
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 1cm;">
+            <div class="col-4" style="vertical-align: middle;">
+                <div><img src="../static/img/head6.png" width="60%"
+                          style="border-radius:15px;border: 3px solid #b4b4b4;"></div>
+            </div>
+            <div class="col-8" style="vertical-align: middle;">
+                <div>
+                    <h3>&nbsp;Bai Z</h3>
+                    <p>
+                        <br> • Smart contract developer
+                        <br> • Backend developer
+                        <br> • Papers about block chain published on IEEE and ICSOC
+                        <br> • Worked closely with hyperledger fabric
+                        <br> • Honours of IT from Deakin University
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin-top: 1cm;">
+            <div class="col-4" style="vertical-align: middle;">
+                <div><img src="../static/img/head5.png" width="60%"
+                          style="border-radius:15px;border: 3px solid #b4b4b4;"></div>
+            </div>
+            <div class="col-8" style="vertical-align: middle;">
+                <div>
+                    <h3>&nbsp;Eda Z</h3>
+                    <p>
+                        <br> • Executive adviser
+                        <br> • Transformational executive delivering expert foresight and operational efficiency
+                        <br> • 10 years of operation management and digital transformation across international
+                        market
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section style="background-color: #000000c0;">
+    <div class="container">
+        <div class="row justify-content-center" style="margin-top: 3cm;margin-bottom: 1cm;">
+            <div class="col-2">
+                <div class="icon1" style="margin-top: 1cm;">
+                    <a href="https://t.me/DeCEXofficial" style="color: #ffffff00;">
+                        bbb
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon2" style="margin-top: 1cm;">
+                    <a href="https://twitter.com/decexfinance" style="color: #ffffff00;">
+                        bbb
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon3" style="margin-top: 1cm;">
+                    <a href="https://medium.com/@decexfinance" style="color: #ffffff00;">
+                        bbb
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon4" style="margin-top: 1cm;">
+                    <a href="https://github.com/DecexFinanace/DeCex-token" style="color: #ffffff00;">
+                        bbb
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="icon5" style="margin-top: 1cm;">
+                    <a href="https://etherscan.io/address/0x2A3a8F2d0487fbf654cd530B5F0A1d9467935D6a"
+                       style="color: #ffffff00;">
+                        bbb
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin-top: 0.5cm; padding-right: 70px;">
+            <div class="col" style="text-align: right;">
+                <img src="../static/img/Logo1.svg" width="80" height="80" class="d-inline-block align-top" alt=""
+                     loading="lazy">
+            </div>
+            <div class="col" style="text-align: left;margin-left: -50px;">
+                <img src="../static/img/white.png" width="150" class="d-inline-block align-top" loading="lazy">
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin-top: 1cm;padding-bottom: 1cm;">
+            <a href="mailto:admin@decex.finance" style="color: #dddbdb;">
+                admin@decex.finance
+            </a>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+<script>
+
+    const metaMaskEnableButton = document.querySelector('.metaMaskEnableButton');
+
+    metaMaskEnableButton.addEventListener('click', async () => {
+        if (typeof window.ethereum !== 'undefined') {
+            console.log('MetaMask is installed!');
+
+            getAccount_metaMask();
+        } else {
+            console.log('Please install MetaMask');
+        }
+
+    });
+
+    async function getAccount_metaMask() {
+        const accounts = await ethereum.request({method: 'eth_requestAccounts'});
+        const account = accounts[0];
+        showAccount.innerHTML = account;
+    }
+
+</script>
